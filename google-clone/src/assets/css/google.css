@@ -55,11 +55,27 @@ a:hover {
     border-radius: 5em / 5em;
     border: 1px solid #AAA;
     flex-flow: row flex-start;
-    justify-content: space-between;
-    padding-top: 1em;
+    justify-content: space-around;
+    padding-top: 0.7em;
 }
 
 .searchbox {
-    height: 1.5em;
-    width: 40em;
+    height: 1.6em;
+    width: 30em;
+    border: none;
+    font-size: 16px;
+}
+
+.searchbox:focus {
+    outline: none;
+}
+
+.magnifying {
+    width: 1em;
+    margin-top: -0.5em
+}
+
+.voice-icon {
+    width: 1.5em;
+    margin-top: -0.5em;
 }
