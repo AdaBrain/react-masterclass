@@ -35,3 +35,13 @@ a:hover {
     height: auto;
     border-radius: 100%;
 }
+
+.search-zone {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#logo {
+    padding-top: 12em;  
+}
