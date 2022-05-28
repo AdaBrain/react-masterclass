@@ -52,17 +52,21 @@ a:hover {
     width: 40em;
     height: 2.5em;
     border-radius: 5em / 5em;
-    border: 1px solid #AAA;
+    border: 1px solid #e0e0e0;
     flex-flow: row flex-start;
     justify-content: space-around;
     padding-top: 0.7em;
 }
 
+#text-search:hover {
+    box-shadow: 0em 0.1em 0.4em 0.1em #e0e0e0;
+}
+
 .searchbox {
-    height: 1.6em;
+    height: 1.8em;
     width: 30em;
     border: none;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .searchbox:focus {
@@ -71,7 +75,7 @@ a:hover {
 
 .magnifying {
     width: 1em;
-    margin-top: -0.5em
+    margin-top: -0.5em;
 }
 
 .voice-icon {
@@ -83,6 +87,12 @@ a:hover {
     display: flex;
     justify-content: center;
     padding-top: 3em;
+}
+
+.search-panal-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
 }
 
 .search-btn {    
@@ -101,4 +111,13 @@ a:hover {
 .search-btn:hover {
     outline: 0.5px solid #e0e0e0;
     box-shadow: 0em 0.15em 0.1em 0.05em #e0e0e0;
+}
+
+.subtext {
+    font-size: 0.85em;
+}
+
+.lang-link {
+    color: #1a0dab;
+    padding-left: 0.5em;
 }
