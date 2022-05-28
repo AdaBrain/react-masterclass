@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import googleLogo from "../assets/img/googlelogo_color.png";
 import magnifying from "../assets/img/magnifying.svg";
 import VoiceIcon from "../elements/VoiceIcon";
@@ -10,21 +11,27 @@ const GoogleLogo = () => {
   );
 };
 
-const TextSearch = () => {
+const TextSearch = (props) => {  
+  const {setPreview} = props
+
   return (
     <div id="text-search" className="row">
       <img className="magnifying" src={magnifying} alt="magnifying" />
-      <input className="searchbox" type="text" />
+      <input className="searchbox" type="text" onChange={(e) => setPreview(e.target.value)} />
       <VoiceIcon />
     </div>
   );
 };
 
 const SearchZone = () => {
+  const [preview, setPreview] = useState("")
+  
   return (
     <div className="search-zone">
       <GoogleLogo />
-      <TextSearch />
+      <TextSearch setPreview={setPreview}/>
+      <br />
+      <span>Suggestion: {preview}</span>
     </div>
   );
 };
