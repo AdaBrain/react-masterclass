@@ -78,3 +78,17 @@ a:hover {
     width: 1.5em;
     margin-top: -0.5em;
 }
+
+.search-panal {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.search-btn {    
+    font-size: 0.9em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #F8F9FA;
+}
