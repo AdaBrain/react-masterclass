@@ -1,10 +1,11 @@
+import SearchBtn from "../elements/SearchBtn"
+
 const SearchPanal = () => {
 
   return (
     <div className="search-panal">
-      <button className="search-btn">
-        Google Search
-      </button>      
+      <SearchBtn label="Google Search"/>
+      <SearchBtn label="I'm feeling Lucky"/>
     </div>
   )
 

@@ -95,6 +95,7 @@ a:hover {
     background-color: #F8F9FA;
     color: #3c4043;
     font-weight: 500;
+    margin-right: 1em;
 }
 
 .search-btn:hover {
