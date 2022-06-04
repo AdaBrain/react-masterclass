@@ -31,7 +31,7 @@ const SearchZone = () => {
       <GoogleLogo />
       <TextSearch setPreview={setPreview}/>
       <br />
-      <span>Suggestion: {preview}</span>
+      <span>Suggestion-123456789: {preview}</span>
     </div>
   );
 };
