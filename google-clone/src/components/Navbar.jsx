@@ -10,8 +10,11 @@ const MenuItem = (props) => {
   );
 };
 
-const RenderMenuItems = () => {
-  const menu = [
+const RenderMenuItems = (props) => {
+  const { isResultPage } = props
+
+  let menu = []
+  const mainMenu = [
     { content: "Gmail" },
     { content: "Images" },
     {
@@ -20,14 +23,25 @@ const RenderMenuItems = () => {
     { content: <img className="avatar" src={avatar} alt="avatar" /> },
   ];
 
+  const resultMenu = [
+    {
+      content: <img className="icon" src={appsGrid} alt="icon" />,
+    },
+    { content: <img className="avatar" src={avatar} alt="avatar" /> },
+  ];
+
+  menu = isResultPage ? resultMenu : mainMenu
+
   return menu.map((m, idx) => <MenuItem key={idx} content={m.content} />);
 };
 
 // ES6 - Arrow function
-const Navbar = () => {
+const Navbar = (props) => {
+  const { isResultPage } = props
+
   return (
     <div className="navbar-comp">
-      <RenderMenuItems />
+      <RenderMenuItems isResultPage={isResultPage} />
     </div>
   );
 };

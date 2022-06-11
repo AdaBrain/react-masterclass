@@ -11,7 +11,7 @@ const ResultPanel = () => {
       <div className="">
         <TextSearch />
       </div>
-      <Navbar />
+      <Navbar isResultPage={true} />
     </div>
   );
 };
