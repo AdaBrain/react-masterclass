@@ -15,7 +15,7 @@ a:hover {
 
     width: 100vw;
     height: 2.5em;    
-    padding-top: 1em;    
+    padding-top: 2em;    
     padding-bottom: 1em;
 }
 
@@ -126,14 +126,25 @@ a:hover {
 .result-panel {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
-    padding: 2.2em;
-    padding-left: 1.5em;
+    padding: 1em;    
+    padding-top: 2em;
 }
 
 .logo-sm {
-    width: 4em;
+    width: 6em;
     height: auto;
+}
+
+.result-title {
+    font-size: 1.5em;
+    color: rgb(0, 0, 181);
+}
+
+.result-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
