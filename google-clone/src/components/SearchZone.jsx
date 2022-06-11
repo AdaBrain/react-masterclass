@@ -36,4 +36,5 @@ const SearchZone = () => {
   );
 };
 
+export { TextSearch };
 export default SearchZone;

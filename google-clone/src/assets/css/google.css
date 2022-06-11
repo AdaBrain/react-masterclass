@@ -121,3 +121,19 @@ a:hover {
     color: #1a0dab;
     padding-left: 0.5em;
 }
+
+
+.result-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    padding: 2.2em;
+    padding-left: 1.5em;
+}
+
+.logo-sm {
+    width: 70%;
+    height: auto;
+}
